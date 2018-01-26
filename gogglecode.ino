@@ -22,79 +22,6 @@ void setup() {
 }
 
 static const uint8_t PROGMEM
-  oh1_bmp[] =
-  { B00000000,
-    B00000000,
-    B00000000,
-    B00000000,
-    B00010000,
-    B00010010,
-    B01111101,
-    B00010000,
-    B00111100,
-    B01010010,
-    B01010010,
-    B00100110,
-    B00000000,
-    B00000000,
-    B00000000,
-    B00000000 },
-
-    oh3_bmp[] =
-  { B00000000,
-    B00000000,
-    B00000000,
-    B00000000,
-    B01000010,
-    B01000010,
-    B01001111,
-    B01000010,
-    B01000010,
-    B01001110,
-    B01010011,
-    B01001110,
-    B00000000,
-    B00000000,
-    B00000000,
-    B00000000 },
-
-
-    oh5_bmp[] =
-  { B00000000,
-    B00000000,
-    B00000000,
-    B00000000,
-    B00001000,
-    B00001000,
-    B00001110,
-    B00001000,
-    B00001000,
-    B00111100,
-    B01001010,
-    B00110000,
-    B00000000,
-    B00000000,
-    B00000000,
-    B00000000},
-
-    oh7_bmp[] =
-  { B00000000,
-    B00000000,
-    B00000000,
-    B00000000,
-    B00111000,
-    B00000000,
-    B00111000,
-    B01000100,
-    B00000100,
-    B00000100,
-    B00011000,
-    B00100000,
-    B00000000,
-    B00000000,
-    B00000000,
-    B00000000},
-
 
     smile1_bmp[] =
   { B00000000,
@@ -146,29 +73,7 @@ static const uint8_t PROGMEM
 
 void loop() {
 
-  matrix1.clear();
-  matrix2.clear();
-  matrix3.clear();
-  matrix4.clear();
-
-  
-  matrix1.drawBitmap(0, 0, oh1_bmp, 8, 16, LED_ON);  
-  matrix1.writeDisplay();
-  
-  
-  matrix2.drawBitmap(0, 0, oh3_bmp, 8, 16, LED_ON);  
-  matrix2.writeDisplay();
-  
-
-  matrix3.drawBitmap(0, 0, oh5_bmp, 8, 16, LED_ON);  
-  matrix3.writeDisplay();
- 
-
-  
-  matrix4.drawBitmap(0, 0, oh7_bmp, 8, 16, LED_ON);  
-  matrix4.writeDisplay();
-  delay(5000);
-  
+   
   matrix1.clear();
   matrix2.clear();
   matrix3.clear();
